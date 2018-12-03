@@ -51,17 +51,21 @@
 ```
 
 	**方式二：**
-	
+
+```	
 	格式：mongodb://用户名:密码@IP:Port/数据库名称
 	
 	spring.data.mongodb.uri=mongodb://luluteam:luluteam@121.199.23.184:52914/PMC
-
+```
 
 2. **获取实例**
 
-    @Autowired 
+```java
 
+    @Autowired 
     private MongoTemplate mongoTemplate;
+
+```
 
 MongoTemplate操作数据库
 
