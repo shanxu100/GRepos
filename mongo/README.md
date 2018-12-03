@@ -16,11 +16,16 @@
  
 2. **删除pom.xml文件中MongoDB启动语句**
 
-	<dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-mongodb</artifactId>
-	</dependency>
+```xml
 
+	<dependency>
+
+            <groupId>org.springframework.boot</groupId>
+
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+
+	</dependency>
+```
 
 
 # 2、 SpringBoot自动配置MongoDB
@@ -29,14 +34,23 @@
 
 1. **增加配置**
 
-	方式一：
+	**方式一：**
+
+```
+
 	spring.data.mongodb.host=xxxxxxxxx
+	
 	spring.data.mongodb.port=xxxx
+	
 	spring.data.mongodb.user=luluteam
+	
 	spring.data.mongodb.password=luluteam
+	
 	spring.data.mongodb.database=readingData 
 
-	方式二：
+```
+
+	**方式二：**
 	
 	格式：mongodb://用户名:密码@IP:Port/数据库名称
 	
