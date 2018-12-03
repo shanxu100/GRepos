@@ -29,11 +29,19 @@
 
 1. **增加配置**
 
+	方式一：
 	spring.data.mongodb.host=xxxxxxxxx
 	spring.data.mongodb.port=xxxx
 	spring.data.mongodb.user=luluteam
 	spring.data.mongodb.password=luluteam
 	spring.data.mongodb.database=readingData 
+
+	方式二：
+	
+	格式：mongodb://用户名:密码@IP:Port/数据库名称
+	
+	spring.data.mongodb.uri=mongodb://luluteam:luluteam@121.199.23.184:52914/PMC
+
 
 2. **获取实例**
 
@@ -48,4 +56,4 @@ spring-data-mongo提供了MongoTemplate来操作bean对象与MongoDB交互，使
 springboot推荐使用用java代码的形式申明注册bean。 
 @Configuration注解可以用java代码的形式实现spring中xml配置文件配置的效果。具体例子可参考 template文件夹下PMCMongoConfig.java 例子
 
-3. ……
+3. 增删改查
