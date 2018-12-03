@@ -1,0 +1,3 @@
+- mongodb-driver 3.0以上版本
+- MongoDBUtil封装了常用方法
+- MongoDBExample文件列举了3.0 API的常用例子

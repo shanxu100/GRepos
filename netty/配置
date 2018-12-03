@@ -1,0 +1,8 @@
+###############Netty基础配置###########
+netty.port=9999
+netty.boss.count=1
+netty.worker.count=0
+netty.so.keep-alive=true
+netty.so.backlog=100
+netty.tcp.no-delay=true
+netty.heartbeat.timeout=15
