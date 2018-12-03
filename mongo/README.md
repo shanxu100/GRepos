@@ -52,7 +52,7 @@
 
 	**方式二：**
 
-```	bash
+```bash
 	格式：mongodb://用户名:密码@IP:Port/数据库名称
 	
 	spring.data.mongodb.uri=mongodb://luluteam:luluteam@121.199.23.184:52914/PMC
