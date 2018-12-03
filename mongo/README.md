@@ -11,8 +11,12 @@
 **解决方法**：
 
 1. **增加注解**
-	
-	 @SpringBootApplication(exclude = MongoAutoConfiguration.class)
+
+```java
+
+	@SpringBootApplication(exclude = MongoAutoConfiguration.class)
+
+```
  
 2. **删除pom.xml文件中MongoDB启动语句**
 
@@ -25,6 +29,7 @@
             <artifactId>spring-boot-starter-data-mongodb</artifactId>
 
 	</dependency>
+
 ```
 
 
@@ -34,7 +39,7 @@
 
 1. **增加配置**
 
-	**方式一：**
+**方式一：**
 
 ```bash
 
@@ -50,12 +55,14 @@
 
 ```
 
-	**方式二：**
+**方式二：**
 
-```bash
+```
+
 	格式：mongodb://用户名:密码@IP:Port/数据库名称
 	
-	spring.data.mongodb.uri=mongodb://luluteam:luluteam@121.199.23.184:52914/PMC
+	spring.data.mongodb.uri=mongodb://luluteam:luluteam@xxxxxxxx:52914/PMC
+
 ```
 
 2. **获取实例**
@@ -74,4 +81,4 @@ spring-data-mongo提供了MongoTemplate来操作bean对象与MongoDB交互，使
 springboot推荐使用用java代码的形式申明注册bean。 
 @Configuration注解可以用java代码的形式实现spring中xml配置文件配置的效果。具体例子可参考 template文件夹下PMCMongoConfig.java 例子
 
-3. 增删改查
+3. **进行增删改查......**
